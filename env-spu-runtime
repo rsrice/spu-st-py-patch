@@ -1,0 +1,3 @@
+export SPU_RUNTIME_INSTALL_DIR=/home/ryuichis/Work/STX/spu-runtime/install
+export LD_LIBRARY_PATH=$SPU_RUNTIME_INSTALL_DIR/lib:$LD_LIBRARY_PATH
+

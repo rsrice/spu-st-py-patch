@@ -1,0 +1,12 @@
+export SPU_LLVM_INSTALL_DIR=/home/ryuichis/Work/STX/spu-llvm/install
+export LD_LIBRARY_PATH=$SPU_LLVM_INSTALL_DIR/lib:$LD_LIBRARY_PATH
+export PATH=$SPU_LLVM_INSTALL_DIR/bin:$PATH
+
+export CPP_INCLUDES="\
+  -I${SPU_RUNTIME_INSTALL_DIR}/include/base \
+  -I${SPU_RUNTIME_INSTALL_DIR}/include/base/offloading \
+  -I${SPU_RUNTIME_INSTALL_DIR}/include/base/spu_offloading \
+  -I${SPU_RUNTIME_INSTALL_DIR}/include/simulator \
+  -I${SPU_RUNTIME_INSTALL_DIR}/include/tools"
+export CPP_LDFLAGS="-L${SPU_RUNTIME_INSTALL_DIR}/lib -lspu_runtime -L${SPU_LLVM_INSTALL_DIR}/lib"
+
