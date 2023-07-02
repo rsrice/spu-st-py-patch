@@ -1,0 +1,13 @@
+Submodule spu-llvm contains modified content
+diff --git a/spu-llvm/configure.sh b/spu-llvm/configure.sh
+index 259c37eff74d..b38e6b980be0 100755
+--- a/spu-llvm/configure.sh
++++ b/spu-llvm/configure.sh
+@@ -50,6 +50,7 @@ cmake -G Ninja \
+       -DLIBOMPTARGET_BUILD_CUDA_PLUGIN=False \
+       -DLIBOMPTARGET_BUILD_AMDGPU_PLUGIN=False \
+       -DLIBOMPTARGET_BUILD_DEVICERTL_BCLIB=False \
++      -DLIBOMPTARGET_ENABLE_SPU_OFFLOAD_HISTORY=OFF \
+       -DLLD_ENABLE_ANNOTATED_SPU_IMAGE_OPTION=On \
+       -DLLVM_ENABLE_DUMP=On \
+       "$@" \
