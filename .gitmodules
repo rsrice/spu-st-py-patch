@@ -1,0 +1,3 @@
+[submodule "spu-llvm"]
+	path = spu-llvm
+	url = https://gitlab.itwm.fraunhofer.de/kai_plociennik/spu-llvm.git
